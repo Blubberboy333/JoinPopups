@@ -1,1 +1,8 @@
+# Amount of time a player will see the popup when they join (In seconds)
+Time: 30
 
+# Show how many players are on the server?
+PlayerCount: true
+
+# Message that will be displayer via Popup
+Message: §3Welcome §6To §4The §9Server!
