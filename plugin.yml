@@ -3,3 +3,16 @@ main: JoinPopups\Main
 version: 1.0.0
 api: [2.0.0]
 author: Blubberboy333
+commands:
+  popup:
+    usage: /popup <on | off>
+    description: Toggle popups on/off for the sender
+    permission.joinpopup.command
+permissions:
+  joinpoppup:
+    default: false
+    description: Allows the player to use all of the JoinPopUp features
+    children:
+      joinpopup.command:
+        default: true
+        description: Allows the player to use the Popup command
