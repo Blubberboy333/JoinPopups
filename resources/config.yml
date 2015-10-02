@@ -1,6 +1,3 @@
-# Amount of time a player will see the popup when they join (In seconds)
-Time: 30
-
 # Show how many players are on the server?
 PlayerCount: true
 
