@@ -7,7 +7,7 @@ commands:
   popup:
     usage: /popup <on | off>
     description: Toggle popups on/off for the sender
-    permission.joinpopup.command
+    permission: joinpopup.command
 permissions:
   joinpoppup:
     default: false
