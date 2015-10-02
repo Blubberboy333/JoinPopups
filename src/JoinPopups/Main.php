@@ -12,8 +12,12 @@ use pocketmine\event\player\PlayerQuitEvent;
 class Main extends PluginBase implements Listener{
     public function onEnable(){
         $this->saveDefaultConfig();
+        $this->time = 0;
         $this->playersEnabled = array();
         $this->playersOnline = count($this->getServer()->getOnlinePlayers());
+        $schedule = $this->getServer()->getScheduler()->scheduleRepeatingTask(new Timer);
+        $this->showPlayers = $this->getConfig()->get("PlayerCount");
+        $this->message = $this->getConfig()->get("Message");
         $this->getLogger()->info("§aJoinPopups enabled");
     }
     public function onDisable(){
