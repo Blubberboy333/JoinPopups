@@ -5,6 +5,7 @@ namespace JoinPopups;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\utils\Config;
+use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\player\PlayerQuitEvent;
 
